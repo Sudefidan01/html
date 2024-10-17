@@ -1,0 +1,167 @@
+﻿<!-- HTMl sayfaları içerisinde yorum satırı için <!-- -- > ifadesini kullanırız
+
+<!--
+    HTML(Hyper Text Markup Language) metninin kısaltmasıdır
+    HTML , çeşitli anlamlara gelen kodlamalar(tag) ve düz metinlerden oluşur
+    Bu kodlar ancak bir Web Browser tarafından anlamlı hale getirilip kullanıcı tarafından görüntülenir
+    Bu programlama dili ile yazılmış dosyaların uzantıları .html ve .htm olarak belirtilir
+
+    HTML kodları < ile başlayıp > ile biten anahtarladan oluşmaktadır.
+    Oluşturulan HTML taglarını kapatmak için </ ile başalyıp > ile sonlandırmanız gerekmektedir
+
+    Örnek : <html> </html>
+
+    GHazırlanan tüm HTML sayfaları bu şekilde hazırlanmış olan kodlardan ve aralarında geçen metinelrden oluşmaktadır.Bir HTML tag'ı içerisinde özellikler belirtilecek ise başlangıç tagine özellik="deger" şeklinde tanımlama yapılmaktadır
+    
+    Örnek: <body bgcolor="blue"> </body>
+    Yukarıda belirtilen örnekte body tagi içerisinde arkaplan tanımlaması yapılmıştır
+
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+<!-- Bir HTML sayfasının başladığını belirtir-->
+<head>
+    <!-- HTML sayfası içerisinde tanımlanan meta taglar , script dosyaları  css dosyaları vs ... gibi dökümanların belirtildiği alandır.Bu alan kullanıcı tarafından görüntülenemez-->
+    <meta charset="utf-8" /> <!-- Sayfa içerisinde kullanılacak olan dilin karakter kodunu belirttiğimiz alandır.Bu alan içerisinde tanımlanabilecek olan charset listesine internet üzerinden ulaşabilirsinz-->
+    <title>HTML Dersleri</title><!-- Sayfanın başlığını tanımladığımız alandır-->
+</head>
+<body bgcolor="green">
+    <!-- HTML sayfalarında bu alan içerisinde yazılan metinler ve taglar kullanıcı tarafından görüntülenir-->
+    HTML derslerine hoşgeldiniz .
+    <!-- ÇİZGİ -->
+    <!--
+        HR(Horizontal Rule) etiketinin diğer taglar gibi başlama ve bitirme komutu bulunmamaktadır.İçerisne herhangi bir metin veya tag yazılmayacağından dolayı başladığı gibi biter . <hr/>
+
+        İçerine 3 farklı parametre alabilir
+
+        - Size : Çizginin kalınlığını belirtir
+        - Width : Çizginin genişliğini belirtir
+        - Align : Çizginin konumunu belirtir.(left,right ,center).Default olarak center konumunu alır
+
+    -->
+    <hr size="20" width="250" align="left" />
+    <hr />
+    <!-- Başlık-->
+    <!--
+        Başlık etiketi <h1> ile <h6> arasında küçükten büyüğe doğru kullanılmaktadır
+        En büyük başlık <h1> en küçük başlık <h6> dur
+        Başlık etiketleri kullanıldıktan sonra otomatik olarak alt satıra geçme işlemi yapar
+
+    -->
+    <h1>Başlık 1</h1>
+    <h2>Başlık 2</h2>
+    <h3>Başlık 3</h3>
+    <h4>Başlık 4</h4>
+    <h5>Başlık 5</h5>
+    <h6>Başlık 6</h6>
+
+    <hr />
+    <!-- Paragraf -->
+    <!--
+        Paragraf etiketleri HTML web sitelerinde kullandığımız içerikleri paragrafa çevirmke için kullanılır
+        Paragraf etiketi <p>.....</p> şeklinde kullanılır
+        Paragraf etiketi kullanıldıktan sonra otomatik olarak bir alt satıra geçme işlemi sağlar
+    -->
+    <p>Paragraf etiketi kullanım örneği</p>
+    <p>
+        Paragraf etiketlerinde
+
+        boşluk bıraksanız bile
+
+        HTML dili alt satıra geçme işlemerini
+
+        yok sayarak ekrana düz bir metin halinde
+
+        göstektedir
+    </p>
+
+    <!-- Alt Satıra Geçme-->
+    <!-- HTML dilinde alt satıra geçme işlemi için <br/> tagini kullanırız-->
+    Düz metinler
+
+    içerisinde yazılan
+
+    yazıları<br /> bazı durumlarda <br /> alt satıra geçerek görüntüleyebiliriz
+    <hr />
+    <!-- Biçimlendirme -->
+    <!--
+        HTML sayfaları içerisinde düzenleme yani biçimlendirme kullanılarak metinler üzerinde biçimlenlendirme işlemleri yapılmaktadır. HTML sayfasındaki metinlerin renk, boyut, kalınlık, eğiklik vs... gibi değişklikler HTML metin düzenleme etiketleri ile yapılmaktadır.
+
+        HTML metin düzenleme etiketleri metinleri vurgulamak, daha okunabilir ve daha belirgin yapmak için kullanılır.
+
+        HTML dilinde en çok kullanılıan etiketler:
+        - <b>           => (Bold) kalın yazı
+        - <strong>      => Önemli yazı,
+        - <u>           => (Underline) altı çizgili yazı
+        - <ins>         => Altı çizgili pasif yazı
+        - <i>           => (Italic)eğimli yazı
+        - <em>          => Vurgulanan yazı
+        - <font>        => Yazı tipi, boyut, renk belirlemek için kullanılır.
+        - <mark>        => işaretlenmiş yazı
+        - <s>           => Üstü çizgili yazı
+        - <del>         => Üstü çizgili pasif yazı
+        - <sub>         => Alt simge yazı
+        - <sup>         => Üst simge yazı
+        - <big>         => Büyük yazı
+        - <small>       => Küçük yazı
+
+        Genel Not: HTML etiketlerini iç içe sınırsız bir şekilde, tag açma ve kapama kurallarına bağlı kalarak istediğiniz kadar kullanabilirsiniz.
+
+       
+    -->
+    <!--
+            Font etiketi
+
+            Font etiketi ile yazılan metinler içerisinde renk, boyut, yazı tipi gibi özellikler tanımlanabilir.
+            Font etiketinin 3 parametresi bulunmaktadır.
+
+            Parametreler:
+            - Size: Yazının boyutunu belirtir. 1 ile 7  arasında değer almaktadır.
+            - Color: Yazının rengini belirtir. Yazı rengini iki farklı yöntem ile tanımlayabiliriz. Yazının rengini ingilizce ismi ile veya RGB renk kodu tanımlaması yaparak belirleyebiliriz. RGB renk kodu tanımlaması #000000 ile #ffffff arasındaki kodlar ile tanımlanabilir.
+            - Face: Yazı tipini belirtir. Default olrak işletim sisteminde kullanılan yazı tipini alır. Font tanımlaması yaparken işletim sisteminde yüklü olan fontlardan birinin belirlenmesi gerekmektedir. Aksi takdirde font görüntülemesi doğru bir şekilde yapılamaz.
+        -->
+    <b>Kalın Yazı</b><br />
+    <strong>Önemli Yazı</strong><br />
+    <u>Altı Çizili Yazı</u><br />
+    <i>Eğik Yazı</i><br />
+    <mark>Vurgulu Yazı</mark><br />
+    <hr />
+    <font size="6"> Font Yazı Örneği 1 </font><br />
+    <font color="blue"> Font Yazı Örneği 2 </font><br />
+    <font face="Tahoma"> Font Yazı Örneği 3 </font><br />
+    <font size="4" color="red" face="Tahoma"> Font Yazı Örneği 4</font><br />
+
+    <hr/>
+
+    <!-- Resim-->
+    <!--
+        Resim eklemek için <img /> etiketi kullanılır
+        
+        Resim etiketinin parametreleri:
+        -src:Resim kaynağını belirtir
+        -alt : resim herhangi bir bir sepeten dolayı görüntülenmediğinde gözükecek metin bilgisidir
+        -title : Resimi isimlendirmek için kullanılır
+        -width :Resmin genişliğini belirtir
+        -Height : Resmin yüksekliğini belirtir
+        -border : Resmin çerçeve kalınlığını belirtir.Tanımlanmadığı takdirde sıfır değerini alır
+        -Align : Resmin konumunu belirlemek için kullanılır.(left , right , center)(Center konumunu HTML5 dili tarafından desteklenmediği için çalışmamaktadır)
+    -->
+    <img src="images/a.jpg" width="100" alt="Resim" title="Süngerbob Resmi" border="5" align="right" />
+    
+    <p>
+
+        Lorem Ipsum,
+        <b>kısaca Lipsum,<i>masaüstü yayıncılık ve basın</i>  yayın </b> 
+sektöründe kullanılan taklit yazı bloğu olarak tanımlanır. Lipsum, oluşturulacak şablon ve taslaklarda içerik yerine geçerek yazı bloğunu doldurmak için kullanılır.
+
+        <font color="white" size="6"><i><b><u>Lipsum, 1500'lerin başlarında bir matbaacının font model kitabı oluşturmak  </u> </b></i></font>
+        
+        
+        
+        için, bir yazı tipi kütüphanesindeki harflerin sıralamasını bozarak yerleştirdiğinden bu yana endüstri standardı haline gelmiştir.
+    </p>
+</body>
+</html>
